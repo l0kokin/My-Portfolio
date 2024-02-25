@@ -1,8 +1,18 @@
+@font-face {
+  font-family: Editorial New;
+  src: url("./fonts/EditorialNew-Regular.otf") format("truetype");
+}
+
+@font-face {
+  font-family: NB Akademie Pro;
+  src: url("./fonts/NB-Akademie-Pro-Regular.otf") format("truetype");
+}
+
 * {
   margin: 0;
   padding: 0;
   background-color: #c8c8ca;
-  font-family: Editorial New, Helvetica;
+  /* font-family: Editorial New, Helvetica; */
   font-size: 26px;
   font-weight: 400;
   line-height: 28px;
@@ -12,6 +22,9 @@
 
 body {
   height: 100vh;
+  p {
+    font-family: NB Akademie Pro, Helvetica;
+  }
 }
 
 .container {
@@ -25,7 +38,7 @@ body {
   padding: 10px;
 
   span {
-    font-family: NB Akademie Pro, sans-serif;
+    font-family: Editorial New, sans-serif;
   }
 }
 
@@ -38,7 +51,7 @@ body {
 .project {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 50px;
   padding: 15px;
   border-right: 2px solid black;
   border-bottom: 2px solid black;
