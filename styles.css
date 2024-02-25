@@ -12,7 +12,6 @@
   margin: 0;
   padding: 0;
   background-color: #c8c8ca;
-  /* font-family: Editorial New, Helvetica; */
   font-size: 26px;
   font-weight: 400;
   line-height: 28px;
@@ -22,6 +21,7 @@
 
 body {
   height: 100vh;
+
   p {
     font-family: NB Akademie Pro, Helvetica;
   }
@@ -93,6 +93,14 @@ body {
 }
 
 @media screen and (max-width: 770px) {
+  * {
+    margin: 7px;
+  }
+
+  .text {
+    padding: 0px;
+  }
+
   .myProjects {
     display: flex;
     flex-direction: column;
@@ -104,10 +112,20 @@ body {
     width: 100%;
     padding-right: none;
     padding-top: 30px;
+    margin: 0 10px !important;
 
     img {
       width: 350px;
       height: 220px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .project {
+    img {
+      width: 280px;
+      height: 180px;
     }
   }
 }
