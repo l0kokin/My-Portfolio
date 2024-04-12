@@ -120,7 +120,7 @@
   }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 780px) {
   * {
     margin: 7px;
   }
@@ -140,6 +140,7 @@
     width: 100%;
     padding-top: 30px;
     margin: 0 10px !important;
+    gap: 0px;
 
     img {
       width: 350px;
