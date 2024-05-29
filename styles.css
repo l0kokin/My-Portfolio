@@ -10,10 +10,10 @@
   font-size: 42px;
   font-weight: 400;
   line-height: 48px;
+}
 
-  span {
-    font-family: Editorial New, sans-serif;
-  }
+.text span {
+  font-family: Editorial New, sans-serif;
 }
 
 .email {
@@ -32,10 +32,6 @@
   line-height: 14px;
   padding: 10px 20px;
   color: rgba(0, 0, 0, 0.566);
-
-  @media screen and (max-width: 1530px) {
-    padding: 30px 10px 40px 10px;
-  }
 }
 
 .myProjects {
@@ -52,23 +48,23 @@
   padding-bottom: 25px;
   border-right: 2px solid var(--black);
   border-bottom: 2px solid var(--black);
+}
 
-  a {
-    display: flex;
-    justify-content: center;
-  }
+.project a {
+  display: flex;
+  justify-content: center;
+}
 
-  img {
-    -webkit-transition: -webkit-transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
-    width: 180px;
-    height: 120px;
-    margin-top: 30px;
-  }
+.project img {
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  width: 180px;
+  height: 120px;
+  margin-top: 30px;
+}
 
-  img:hover {
-    transform: scale(1.05);
-  }
+.project img:hover {
+  transform: scale(1.05);
 }
 
 .project-title,
@@ -80,12 +76,19 @@
   text-align: center;
 }
 
+/* ************* MEDIA  *************** */
 @media screen and (min-width: 1800px) {
   .text,
   span,
   .email {
     font-size: 52px;
     line-height: 58px;
+  }
+}
+
+@media screen and (max-width: 1530px) {
+  .note {
+    padding: 30px 10px 40px 10px;
   }
 }
 
